@@ -42,17 +42,7 @@ export default {
       if (!this.$refs.search.hasError) {
         this.showresults = false
         if (!isNaN(this.searchwords) & this.searchwords.length === 4) {
-          // console.log('Search for Client', this.searchwords)
-          this.searchClients()
-        } else {
-          if (!isNaN(this.searchwords) & this.searchwords.length === 4) {
-            // console.log('Search for Project', this.searchwords)
-            this.searchProjects()
-          } else {
-            this.showresults = true
-            console.log('Search for opportunity', this.searchwords)
-            // this.searchProjectNames()
-          }
+          this.searchProjects()
         }
       }
     },
