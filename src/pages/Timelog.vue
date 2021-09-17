@@ -45,7 +45,7 @@ export default {
           // console.log('Search for Client', this.searchwords)
           this.searchClients()
         } else {
-          if (!isNaN(this.searchwords) & this.searchwords.length === 5) {
+          if (!isNaN(this.searchwords) & this.searchwords.length === 4) {
             // console.log('Search for Project', this.searchwords)
             this.searchProjects()
           } else {
